@@ -8,7 +8,7 @@ import ProductDetailPage from './page/ProductDetailPage';
 import Login from './page/Login';
 import UserPage from "./page/UserPage";
 function App() {
-  const [authenticate, setAuthenticate] = useState(true);
+  const [authenticate] = useState(true);
   const PrivateRoute = () => {
     return authenticate === true ? <UserPage/> : <Navigate to="/login"/>
   };
